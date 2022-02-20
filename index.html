@@ -12,6 +12,15 @@
 		<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
 		<link rel="icon" href="/images/favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script>
+			// Add Goggle map to dom
+			function initMap() {
+					const map = new google.maps.Map(document.getElementById("map"), {
+  					zoom: 10,
+					center: { lat: 53.451832, lng: -2.080206 },
+					});
+				}
+		</script>
 	</head>
 	<body class="is-preload homepage">
 		<div id="page-wrapper">
@@ -267,15 +276,7 @@
 			<script
 			  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQyZUaxzcW4XyZnyHSl-JELM8gQAfmUDQ&callback=initMap"
 			  async
-			>
-				// Add Goggle map to dom
-				function initMap() {
-					const map = new google.maps.Map(document.getElementById("map"), {
-  					zoom: 10,
-					center: { lat: 53.451832, lng: -2.080206 },
-					});
-				}
-			</script>
+			></script>
 
 	</body>
 </html>
