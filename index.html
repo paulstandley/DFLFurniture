@@ -12,7 +12,8 @@
 		<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
 		<link rel="icon" href="/images/favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link href="index.js">
+		<link rel="stylesheet" type="text/css" href="./style.css" />
+		<script src="./index.js"></script>
 	</head>
 	<body class="is-preload homepage">
 		<div id="page-wrapper">
@@ -64,19 +65,7 @@
 			<!-- Banner -->
 				<div id="banner-wrapper">
 					<div id="banner" class="box container">
-						<div class="row">
-							<div class="col-7 col-12-medium">
-								<h2>Email what text you want here indexed as banner</h2>
-								<p>so I can put it in place</p>
-							</div>
-							<div class="col-5 col-12-medium">
-								<ul>
-									<div id="map"></div>
-									<!--<li><a href="#" class="button large icon solid fa-arrow-circle-right">Do we need this</a></li>
-									<li><a href="#" class="button alt large icon solid fa-question-circle">Or this</a></li>-->
-								</ul>
-							</div>
-						</div>
+						<div id="map"></div>
 					</div>
 				</div>
 
@@ -264,11 +253,11 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+		    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
 			<script
-			  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQyZUaxzcW4XyZnyHSl-JELM8gQAfmUDQ&callback=initMap"
-			  async
-			></script>
+			src="https://maps.googleapis.com/maps/api/js?key=API_KEY&callback=initMap&libraries=&v=weekly"
+			async
+		  	></script>	
 
 	</body>
 </html>
